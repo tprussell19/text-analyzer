@@ -101,3 +101,14 @@ const word = "hello";
 const text = "hello there";
 boldPassage(word, text);
 Expected Output: "<p>hello <b>there</b></p>"
+
+Describe: getThreeMostUsedWords()
+
+Test: "It should return the three most used words in a string with their count."
+Code:
+const: text = "Hi there hey yo hi hi yay yo whoa there whoa... yay!"
+getThreeMostUsedWords(text);
+Expected Output:
+  hi: 3
+  whoa: 2
+  yay: 2
